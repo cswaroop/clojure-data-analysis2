@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Census Clusters</title>
+    <meta charset="utf-8">
+    <style type="text/css" media="screen">
+      .node circle {
+        fill: #fff;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+      }
+      .node {
+        font: 10px sans-serif;
+      }
+      .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="hierarchy.js"></script>
+    <script>
+      graphClusters('census-clusters.json', 15000);
+    </script>
+  </body>
+</html>

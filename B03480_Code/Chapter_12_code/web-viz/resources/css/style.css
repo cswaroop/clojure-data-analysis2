@@ -1,0 +1,79 @@
+/*
+ * div.chart {
+ *     height: 450px;
+ *     width: 650px;
+ * }
+ */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: smaller;
+}
+
+#boxplot {
+    width: 1000px;
+}
+#boxplot line,
+#boxplot rect,
+#boxplot circle {
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+#boxplot .center {
+    stroke-dasharray: 3,3;
+}
+#boxplot .outlier {
+    fill: none;
+    stroke: #ccc;
+}
+
+#force {
+    width: 650px;
+    height: 500px;
+}
+
+#force .node {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+#force .link {
+    stroke: #999;
+    stroke-opacity: 1;
+}
+
+#force {
+    float: left;
+}
+
+#datapane {
+    float: right;
+    width: 250px;
+}
+
+#datapane dt {
+    font-weight: bold;
+}
+
+#time .axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#time .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#time .x.axis path {
+    displays: none;
+}
+
+#time .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+    <title>Iris-SOMs</title>
+
+    <style type="text/css" media="screen">
+
+      body {
+        font-family: Ubuntu, sans-serif;
+        color: #333;
+      }
+
+      .cell {
+        margin: 8px;
+        border: 1px solid #333;
+        width: 55px;
+        height: 60px;
+        float: left;
+        box-shadow: 2px 2px 1px 1px #ddd;
+      }
+
+      .cell svg {
+        width: 100%;
+      }
+
+      .row {
+        clear: both;
+      }
+
+      #cell41 text, #cell41 path { fill: #2ca02c; }
+      #cell81 text, #cell81 path { fill: #ff7f0e; }
+      #cell90 text, #cell90 path { fill: #1f77b4; }
+
+      #legend {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart">
+      <div class='row'>
+        <div id="cell00" class='cell'></div>
+        <div id="cell10" class='cell'></div>
+        <div id="cell20" class='cell'></div>
+        <div id="cell30" class='cell'></div>
+        <div id="cell40" class='cell'></div>
+        <div id="cell50" class='cell'></div>
+        <div id="cell60" class='cell'></div>
+        <div id="cell70" class='cell'></div>
+        <div id="cell80" class='cell'></div>
+        <div id="cell90" class='cell'>
+          <svg>
+            <g transform="translate(14,3)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">50</text>
+              <path d="M0,4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,-4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,4.51351666838205Z" transform="translate(0,9)"></path>
+            </g>
+            <g transform="translate(14,21)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">0</text>
+              <path d="M-5.366563145999495,-1.7888543819998317H-1.7888543819998317V-5.366563145999495H1.7888543819998317V-1.7888543819998317H5.366563145999495V1.7888543819998317H1.7888543819998317V5.366563145999495H-1.7888543819998317V1.7888543819998317H-5.366563145999495Z" transform="translate(0,9)"></path>
+            </g>
+            <g transform="translate(14,39)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">0</text>
+              <path d="M0,-7.444838872816797L4.298279727294168,0 0,7.444838872816797 -4.298279727294168,0Z" transform="translate(0,9)"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class='row'>
+        <div id="cell01" class='cell'></div>
+        <div id="cell11" class='cell'></div>
+        <div id="cell21" class='cell'></div>
+        <div id="cell31" class='cell'></div>
+        <div id="cell41" class='cell'>
+          <svg>
+            <g transform="translate(14,3)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">0</text>
+              <path d="M0,4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,-4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,4.51351666838205Z" transform="translate(0,9)"></path>
+            </g>
+            <g transform="translate(14,21)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">0</text>
+              <path d="M-5.366563145999495,-1.7888543819998317H-1.7888543819998317V-5.366563145999495H1.7888543819998317V-1.7888543819998317H5.366563145999495V1.7888543819998317H1.7888543819998317V5.366563145999495H-1.7888543819998317V1.7888543819998317H-5.366563145999495Z" transform="translate(0,9)"></path>
+            </g>
+            <g transform="translate(14,39)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">23</text>
+              <path d="M0,-7.444838872816797L4.298279727294168,0 0,7.444838872816797 -4.298279727294168,0Z" transform="translate(0,9)"></path>
+            </g>
+          </svg>
+        </div>
+        <div id="cell51" class='cell'></div>
+        <div id="cell61" class='cell'></div>
+        <div id="cell71" class='cell'></div>
+        <div id="cell81" class='cell'>
+          <svg>
+            <g transform="translate(14,3)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">0</text>
+              <path d="M0,4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,-4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,4.51351666838205Z" transform="translate(0,9)"></path>
+            </g>
+            <g transform="translate(14,21)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">50</text>
+              <path d="M-5.366563145999495,-1.7888543819998317H-1.7888543819998317V-5.366563145999495H1.7888543819998317V-1.7888543819998317H5.366563145999495V1.7888543819998317H1.7888543819998317V5.366563145999495H-1.7888543819998317V1.7888543819998317H-5.366563145999495Z" transform="translate(0,9)"></path>
+            </g>
+            <g transform="translate(14,39)">
+              <text x="30" y="9" dy=".35em" style="text-anchor: end;">27</text>
+              <path d="M0,-7.444838872816797L4.298279727294168,0 0,7.444838872816797 -4.298279727294168,0Z" transform="translate(0,9)"></path>
+            </g>
+          </svg>
+        </div>
+        <div id="cell91" class='cell'></div>
+      </div>
+      <div id="legend">
+        <svg width="622" height="50">
+          <g transform="translate(175,0)">
+          <g transform="translate(0,3)">
+            <text x="14" y="9" dy=".35em" style="text-anchor: start;">Setosa</text>
+            <path d="M0,4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,-4.51351666838205A4.51351666838205,4.51351666838205 0 1,1 0,4.51351666838205Z" transform="translate(0,9)"></path>
+          </g>
+          <g transform="translate(150,3)">
+            <text x="14" y="9" dy=".35em" style="text-anchor: start;">Versicolor</text>
+            <path d="M-5.366563145999495,-1.7888543819998317H-1.7888543819998317V-5.366563145999495H1.7888543819998317V-1.7888543819998317H5.366563145999495V1.7888543819998317H1.7888543819998317V5.366563145999495H-1.7888543819998317V1.7888543819998317H-5.366563145999495Z" transform="translate(0,9)"></path>
+          </g>
+          <g transform="translate(300,3)">
+            <text x="14" y="9" dy=".35em" style="text-anchor: start;">Virginica</text>
+            <path d="M0,-7.444838872816797L4.298279727294168,0 0,7.444838872816797 -4.298279727294168,0Z" transform="translate(0,9)"></path>
+          </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    
+    <!--
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="iris-soms.js"></script>
+    -->
+  </body>
+</html>
