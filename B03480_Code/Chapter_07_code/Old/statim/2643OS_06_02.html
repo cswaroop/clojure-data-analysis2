@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+    <title>2643OS_06_02</title>
+    <style type="text/css" media="screen">
+      body {
+        font-family: Ubuntu, sans-serif;
+        color: #333;
+        padding: 20px;
+      }
+      th {
+        font-family: Ubuntu Mono, monospace;
+      }
+      code {
+        font-family: Ubuntu Mono, monospace;
+      }
+      caption, .caption {
+        font-weight: bold;
+      }
+      table {
+        border: 1px solid #333;
+        padding: 3px;
+      }
+
+      #form {
+        font-size: larger;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 390px;
+      }
+      .ncol {
+        text-align: right;
+        padding-right: 3px;
+      }
+      .step {
+        float: left;
+        margin-right: 50px;
+      }
+      .step table {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        box-shadow: 3px 3px 3px 2px #ccc;
+      }
+      #groupeddata table {
+        width: 270px;
+      }
+      #extractdata table {
+        width: 80px;
+      }
+      #rolleddata table {
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <code>(i/$rollup :mean :POP100 :STATE census)</code>
+    </div>
+
+    <div id="alldata" class="step">
+      <div class="caption">&nbsp;</div>
+      <table>
+        <caption>Input dataset <code>census</code></caption>
+        <thead>
+          <tr><th>:STATE</th> <th>:NAME</th> <th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">6</td> <td>Ashland CDP</td> <td class="ncol">21925</td></tr>
+          <tr><td class="ncol">6</td> <td>San Bernardino city</td> <td class="ncol">209924</td></tr>
+          <tr><td class="ncol">6</td> <td>Trinidad city</td> <td class="ncol">367</td></tr>
+          <tr><td class="ncol">36</td> <td>Smallwood CDP</td> <td class="ncol">580</td></tr>
+          <tr><td class="ncol">36</td> <td>North Babylon CDP</td> <td class="ncol">17509</td></tr>
+          <tr><td class="ncol">36</td> <td>Pleasant Valley CDP</td> <td class="ncol">1145</td></tr>
+          <tr><td class="ncol">36</td> <td>Upper Nyack village</td> <td class="ncol">2063</td></tr>
+          <tr><td class="ncol">51</td> <td>Crosspointe CDP</td> <td class="ncol">5802</td></tr>
+          <tr><td class="ncol">51</td> <td>Flint Hill CDP</td> <td class="ncol">209</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="groupeddata" class="step">
+      <div class="caption">Group by <code>:STATE</code></div>
+      <table>
+        <caption>6</caption>
+        <thead>
+          <tr><th>:STATE</th> <th>:NAME</th> <th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">6</td> <td>Ashland CDP</td> <td class="ncol">21925</td></tr>
+          <tr><td class="ncol">6</td> <td>San Bernardino city</td> <td class="ncol">209924</td></tr>
+          <tr><td class="ncol">6</td> <td>Trinidad city</td> <td class="ncol">367</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>36</caption>
+        <thead>
+          <tr><th>:STATE</th> <th>:NAME</th> <th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">36</td> <td>Smallwood CDP</td> <td class="ncol">580</td></tr>
+          <tr><td class="ncol">36</td> <td>North Babylon CDP</td> <td class="ncol">17509</td></tr>
+          <tr><td class="ncol">36</td> <td>Pleasant Valley CDP</td> <td class="ncol">1145</td></tr>
+          <tr><td class="ncol">36</td> <td>Upper Nyack village</td> <td class="ncol">2063</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>51</caption>
+        <thead>
+          <tr><th>:STATE</th> <th>:NAME</th> <th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">51</td> <td>Crosspointe CDP</td> <td class="ncol">5802</td></tr>
+          <tr><td class="ncol">51</td> <td>Flint Hill CDP</td> <td class="ncol">209</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="extractdata" class="step">
+      <div class="caption">Extract <code>:POP100</code></div>
+      <table>
+        <caption>6</caption>
+        <thead>
+          <tr><th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">21925</td></tr>
+          <tr><td class="ncol">209924</td></tr>
+          <tr><td class="ncol">367</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>36</caption>
+        <thead>
+          <tr><th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">580</td></tr>
+          <tr><td class="ncol">17509</td></tr>
+          <tr><td class="ncol">1145</td></tr>
+          <tr><td class="ncol">2063</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>51</caption>
+        <thead>
+          <tr><th>:POP100</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">5802</td></tr>
+          <tr><td class="ncol">209</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="rolleddata" class="step">
+      <div class="caption">Rollup with <code>:mean</code></div>
+      <table>
+        <caption>6</caption>
+        <thead>
+          <tr><th>:mean</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">232216/3</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>36</caption>
+        <thead>
+          <tr><th>:mean</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">21297/4</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <caption>51</caption>
+        <thead>
+          <tr><th>:mean</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="ncol">6011/2</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
